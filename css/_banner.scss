@@ -1,0 +1,23 @@
+.banner {
+    height: 310px;
+    width: 100%;
+    background-color: black;
+
+    .container {
+        background: url(/img/top.png);
+        background-repeat: no-repeat;
+    }
+    .overlay {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    #carousel-text-color {
+        color: $bgcolor;
+        text-align: right;
+        text-transform: uppercase;
+    }
+}

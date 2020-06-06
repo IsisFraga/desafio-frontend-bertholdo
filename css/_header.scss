@@ -1,0 +1,37 @@
+header {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: $bgcolor;
+    font-size: 0.8em;
+    background-color: $darkheader;
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        color: $yellowtext;
+        height: 3em;
+        align-items: center;
+        margin-left: 40em;
+        margin-right: 13em;
+        // padding: 0.8em 8em 0 30em;
+        justify-content: space-evenly;
+        font-size: 0.8em;
+
+        .arrow {
+            margin-left: -3em;
+        }
+
+        .text,
+        .dot,
+        .arrow {
+            color: $bgcolor;
+        }
+
+        .email {
+            text-transform: lowercase;
+        }
+    }
+}
