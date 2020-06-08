@@ -4,7 +4,7 @@
         text-transform: uppercase;
         color: $bgcolor;
         width: 100%;
-        padding: 0 7em;
+        padding: 0 9em;
     }
 
     .header {
@@ -30,17 +30,27 @@
             align-items: center;
             padding-top: 1.5em;
             width: 70%;
-            img {
+            justify-content: space-between;
+            .search {
                 width: 25px;
                 height: 25px;
                 border: 5px solid $bgcolor;
                 border-radius: 8px;
                 background-color: $bgcolor;
+                position: absolute;
+                right: 13em;
             }
 
             li {
                 padding-right: 3em;
-                min-width: 150px;
+                min-width: 130px;
+
+                &:nth-child(5) {
+                    margin: 0;
+                }
+                .text {
+                    margin: 0;
+                }
             }
         }
     }
