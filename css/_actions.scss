@@ -1,0 +1,65 @@
+.actions {
+    width: 100%;
+    color: $yellowtext;
+    min-height: 9.5em;
+    background-color: $registercolor;
+    position: relative;
+    top: -1px;
+
+    .interf-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card {
+        padding: 1.5em 2em;
+        width: 100%;
+        text-align: center;
+        .txt {
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .act {
+        text-transform: uppercase;
+        color: $bgcolor;
+        font-size: 0.7em;
+        padding: 0.9em;
+        width: 15em;
+        border: 1px solid $bgcolor;
+        background: none;
+        border-radius: 10px;
+        margin: auto;
+
+        &:hover {
+            color: $registercolor;
+            background-color: $bgcolor;
+            border: 1px solid $registercolor;
+        }
+    }
+    .data {
+        background-color: $datacolor;
+    }
+
+    .talk {
+        background-color: $talkcolor;
+    }
+
+    .budget {
+        background-color: $budgetcolor;
+        .txt {
+            padding: 0 2em;
+        }
+    }
+    .register {
+        background-color: $registercolor;
+        .txt {
+            padding: 0 2em;
+        }
+    }
+}

@@ -7,6 +7,7 @@ $budgetcolor: #171415;
 $registercolor: #0f0d0e;
 $yellowtext: #ffdd8a;
 $whatsapp: #67bb34;
+$bgwhatsapp: #da2c99;
 
 * {
     margin: 0;
@@ -28,9 +29,14 @@ body {
 
     // font-family: "Roboto", sans-serif;
 }
-.container {
+.interf-container {
     width: 100%;
     max-width: 1280px;
     height: 100%;
     margin: auto;
+    // padding: 0 10em;
+}
+
+button {
+    cursor: pointer;
 }

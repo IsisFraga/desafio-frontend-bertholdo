@@ -1,23 +1,84 @@
 .banner {
-    height: 310px;
+    height: 450px;
     width: 100%;
-    background-color: black;
+    background-color: #000;
+    .overlay {
+        background-color: rgba(#000, 0.8);
+        width: 100%;
+        height: 100%;
+        padding: 0 10em 0 0;
 
-    .container {
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid $bgcolor;
+            border-radius: 50%;
+            font-size: 1em;
+            background-size: 1.5em;
+            background-position-x: 10px;
+        }
+        .carousel-control-prev-icon {
+            position: relative;
+            left: -3em;
+        }
+        .carousel-control-next-icon {
+            position: relative;
+            right: -13em;
+        }
+    }
+
+    .interf-container {
         background: url(/img/top.png);
         background-repeat: no-repeat;
     }
-    .overlay {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.3);
+    .title {
+        text-transform: uppercase;
+        font-family: "Poppins black";
+        font-weight: 300;
     }
+    .main-txt {
+        text-transform: initial;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 1em;
+        padding-top: 2em;
+        padding-left: 36.5em;
+    }
+
+    .second-txt {
+        font-family: "Poppins";
+        padding: 1em 0 0 31em;
+    }
+
+    button {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        width: 23em;
+        height: 3em;
+        font-family: "Poppins";
+        font-weight: 700;
+        color: $registercolor;
+        border-radius: 10px;
+        border: none;
+    }
+    .yellow {
+        background-color: $yellowtext;
+        &:hover {
+            background-color: $darkheader;
+        }
+    }
+    .green {
+        background-color: $whatsapp;
+        &:hover {
+            background-color: $darkheader;
+        }
+    }
+
     #carousel-text-color {
         color: $bgcolor;
         text-align: right;
-        text-transform: uppercase;
+        height: 100%;
+        padding-top: 4em;
     }
 }
