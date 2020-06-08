@@ -8,20 +8,23 @@ header {
     font-size: 0.8em;
     background-color: $darkheader;
 
+    .interf-container {
+        padding: 0 23em;
+    }
+
     .contact {
         display: flex;
         flex-direction: row;
         color: $yellowtext;
         height: 3em;
+        width: 100%;
         align-items: center;
-        margin-left: 40em;
-        margin-right: 13em;
-        // padding: 0.8em 8em 0 30em;
         justify-content: space-evenly;
-        font-size: 0.8em;
+        font-size: 0.9em;
+        margin: 0.8em 16em 0 13em;
 
         .arrow {
-            margin-left: -3em;
+            margin-left: -0.5em;
         }
 
         .text,

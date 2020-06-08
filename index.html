@@ -7,17 +7,22 @@
 
     <!-- Google fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=PT+Sans+Narrow:wght@700&family=Roboto:wght@100&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;900&family=PT+Sans+Narrow:wght@700&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- favicon  -->
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
 
-    <!-- bootstrap scripts -->
-
+    <!-- jquery scripts -->
+    <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+    <!-- slick -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- bootstrap scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -25,108 +30,413 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <!-- slick scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
     <!-- stylesheets -->
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+
+    <!-- challenge -->
     <link rel="stylesheet" href="css/main.css">
 
     <title>Desafio Front-End Bertholdo</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="contact">
-                <p class="text">
-                    entre em contato conosco
-                </p>
-                <p class="arrow">
-                    🢂
-                </p>
-                <p class="phone">
-                    (31)3333-3333
-                </p>
-                <p class="dot">
-                    •
-                </p>
-                <p class="phone">
-                    (31)93333-3333
-                </p>
-                <p class="dot">
-                    •
-                </p>
-                <p class="email">
-                    comercial@comercial.com.br
-                </p>
+    <div class="block-mobile">
+        <header>
+            <div class="interf-container">
+                <div class="contact">
+                    <p class="text">
+                        entre em contato conosco
+                    </p>
+                    <p class="arrow">
+                        🢂
+                    </p>
+                    <p class="phone">
+                        (31)3333-3333
+                    </p>
+                    <p class="dot">
+                        •
+                    </p>
+                    <p class="phone">
+                        (31)93333-3333
+                    </p>
+                    <p class="dot">
+                        •
+                    </p>
+                    <p class="email">
+                        comercial@comercial.com.br
+                    </p>
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="menu-nav">
-        <div class="container">
-            <div class="header">
-                <h1 class="logo">
-                    logotipo
-                </h1>
-                <ul class="menu">
-                    <li class="text">quem somos</li>
-                    <li class="text">gôndolas ▼</li>
-                    <li class="text">móveis de aço ▼</li>
-                    <li class="text">armazenagem ▼</li>
-                    <li class="text">contato</li>
-                    <img class="search" src="./img/busca.png" alt="ícone de busca">
-                </ul>
-            </div>
+        </header>
+        <section class="menu-nav">
+            <div class="interf-container">
+                <div class="header">
+                    <h1 class="logo">
+                        logotipo
+                    </h1>
+                    <ul class="menu">
+                        <li class="text">quem somos</li>
+                        <li class="text">gôndolas ▼</li>
+                        <li class="text">móveis de aço ▼</li>
+                        <li class="text">armazenagem ▼</li>
+                        <li class="text">contato</li>
+                        <img class="search" src="./img/busca.png" alt="ícone de busca">
+                    </ul>
+                </div>
 
-        </div>
-    </section>
-    <section class="banner">
-        <div class="container">
-            <div id="carousel-text-color" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="overlay">
+            </div>
+        </section>
+        <section class="banner">
+            <div class="interf-container">
+                <div class="overlay">
+                    <div id="carousel-text-color" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h3 class="title">
+                                    produtos direto da fábrica!
+                                </h3>
+                                <p class="main-txt">
+                                    Somos especialistas em gôndolas, porta pallets, racks, roupeiros,
+                                    estantes, e mais diversos outros itens para organizar o armazenamento de produtos.
+                                </p>
+                                <p class="second-txt">
+                                    Solicite seu orçamento agora e monte sua loja com quem entende de aço!
+                                </p>
+                                <button class="yellow">
+                                    quero fazer um orçamento
+                                </button>
+                            </div>
+                            <div class="carousel-item">
+                                <h3 class="title">
+                                    solicite seu orçamento pelo whatsapp
+                                </h3>
+                                <p class="main-txt">
+                                    Venda exclusiva para lojistas
+                                </p>
+                                <p class="second-txt">
+                                    Converse com a gente!
+                                </p>
+                                <button class="green">
+                                    clique aqui para falar conosco
+                                </button>
+                            </div>
                         </div>
-                        <h3 class="title">
-                            produtos direto da fábrica
-                        </h3>
-                        <p class="main-txt">
-                            somos especialistas em gôndolas, porta pallets, racks, roupeiros,
-                            estantes, e mais diversos outros itens para organizar o armazenamento de produtos.
-                        </p>
-                        <p class="second-txt">
-                            solicite seu orçamento agora e monte sua loja com quem entende de aço!
-                        </p>
-                        <button class="yellow">
-                            quero fazer um orçamento
-                        </button>
-                    </div>
-                    <div class="carousel-item">
-                        <h3 class="title">
-                            solicite seu orçamento pelo whatsapp
-                        </h3>
-                        <p class="main-txt">
-                            venda exclusiva para lojistas
-                        </p>
-                        <p class="second-txt">
-                            converse com a gente!
-                        </p>
-                        <button class="green">
-                            clique aqui para falar conosco
-                        </button>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
             </div>
-        </div>
-    </section>
-
+        </section>
+        <section class="actions">
+            <div class="interf-container">
+                <div class="data card">
+                    <p class="txt">
+                        quer ser um colaborador ou representante?
+                    </p>
+                    <button class="act">
+                        preencha seus dados
+                    </button>
+                </div>
+                <div class="talk card">
+                    <p class="txt">
+                        venda exclusiva para lojistas através do WhatsApp:
+                    </p>
+                    <button class="act">
+                        converse com a gente
+                    </button>
+                </div>
+                <div class="budget card">
+                    <p class="txt">
+                        gostou de algum dos nossos produtos?
+                    </p>
+                    <button class="act">
+                        faça seu orçamento
+                    </button>
+                </div>
+                <div class="register card">
+                    <p class="txt">
+                        seja um revendedor agora mesmo!
+                    </p>
+                    <button class="act">
+                        faça seu cadastro
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="interf-container">
+                <p class="product">
+                    nossos produtos
+                </p>
+                <div class="imgs">
+                    <!-- <div class="back">
+                        <button class="btnn">
+                            ⯇
+                        </button>
+                    </div> -->
+                    <figure class="prods">
+                        <img src="./img/Gondola1.jpg" alt="gôndola com frente azul">
+                        <figcaption>
+                            <p class="name">
+                                gôndola xyz
+                            </p>
+                            <p class="price">
+                                R$199,90
+                            </p>
+                            <p class="parc">
+                                ou 6x de R$49,90
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="prods">
+                        <img src="./img/Gondola2.jpg" alt="gôndola com frente vermelha">
+                        <figcaption>
+                            <p class="name">
+                                gôndola xyz
+                            </p>
+                            <p class="price">
+                                R$119,90
+                            </p>
+                            <p class="parc">
+                                ou 6x de R$29,90
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="prods">
+                        <img src="./img/Gondola3.jpg" alt="gôndola com frente azul 2">
+                        <div class="off">
+                            %OFF
+                        </div>
+                        <figcaption>
+                            <p class="name">
+                                gôndola xyz
+                            </p>
+                            <div class="price-ba">
+                                <p class="before">
+                                    R$149,90
+                                </p>
+                                <p class="price">
+                                    R$139,90
+                                </p>
+                            </div>
+                            <p class="parc">
+                                ou 6x de R$22,70
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="prods">
+                        <img src="./img/Gondola4.jpg" alt="gôndola com frente azul2">
+                        <figcaption>
+                            <p class="name">
+                                gôndola xyz
+                            </p>
+                            <p class="price">
+                                R$139,90
+                            </p>
+                            <p class="parc">
+                                ou 6x de R$23,31
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="prods">
+                        <img src="./img/Gondola3.jpg" alt="gôndola com frente vermelha">
+                        <figcaption>
+                            <p class="name">
+                                gôndola xyz
+                            </p>
+                            <p class="price">
+                                R$139,90
+                            </p>
+                            <p class="parc">
+                                ou 6x de R$23,31
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="prods">
+                        <img src="./img/Gondola2.jpg" alt="gôndola com frente amarela">
+                        <figcaption>
+                            <p class="name">
+                                gôndola xyz
+                            </p>
+                            <p class="price">
+                                R$139,90
+                            </p>
+                            <p class="parc">
+                                ou 6x de R$23,31
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <!-- <div class="next">
+                        <button class="btnn">
+                            ⯈
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="whatsapp">
+            <div class="interf-container">
+                <div class="whatslogo">
+                    <img src="./img/WhatsAppLarge.svg" alt="whatsapp logo image">
+                </div>
+                <div class="txt-right">
+                    <h2 class="whats">
+                        solicite seu orçamento pelo whatsapp
+                    </h2>
+                    <p class="whats-txt">
+                        venda exclusiva para lojistas
+                    </p>
+                    <button class="wpp">
+                        converse com a gente
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="interf-container">
+                <div class="overlay">
+                    <div class="content">
+                        <div class="left">
+                            <div class="txt-title-red">
+                                <p class="title-txt">
+                                    seja um revendedor e
+                                    <spam class="red-txt">obtenha</spam>
+                                <p class="red-txt">grandes lucros</p>
+                                <p class="title-txt">
+                                    em suas vendas!
+                                </p>
+                            </div>
+                            <p class="sub-txt">
+                                Cadastre-se usando o formulário ao lado
+                            </p>
+                        </div>
+                        <div class="right">
+                            <form class="data">
+                                <div class="inputs">
+                                    <div class="name">
+                                        <div class="fname">
+                                            <label for="first-name">Nome <spam class="required">*</spam></label>
+                                            <input type="text" class="form-control" id="fname" name="fname" autofocus
+                                                onsubmit="required()" tabindex="0">
+                                        </div>
+                                        <div class="lname">
+                                            <label for="last-name">Sobrenome <spam class="required">*</spam></label>
+                                            <input type="text" class="form-control" id="lname" name="lname"
+                                                onsubmit="required()" tabindex="0">
+                                        </div>
+                                    </div>
+                                    <div class="email">
+                                        <label for="email">E-mail <spam class="required">*</spam></label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            onsubmit="required()" tabindex="0">
+                                    </div>
+                                    <div class="tel-link">
+                                        <div class="tel">
+                                            <label for="tel">Telefone <spam class="required">*</spam></label>
+                                            <input type="tel" class="form-control" id="tel" name="tel"
+                                                onsubmit="required()" tabindex="0">
+                                        </div>
+                                        <div class="cv">
+                                            <label for="link">Link para seu currículo <spam class="required">*</spam>
+                                            </label>
+                                            <input type="url" class="form-control" id="url" name="url"
+                                                onsubmit="required()" tabindex="0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="send-btn" tabindex="0">
+                                    enviar meu cadastro
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="interf-container">
+                <div class="whatslogo">
+                    <img src="./img/icon-whatsapp.svg" alt="whatsapp green logo">
+                </div>
+                <h3 class="logo">
+                    logotipo
+                </h3>
+                <div class="information">
+                    <ul class="first">
+                        <li class="txt">quem somos</li>
+                        <li class="txt">gôndolas</li>
+                        <li class="txt">móveis de aço</li>
+                        <li class="txt">armazenagem</li>
+                        <li class="txt">contato</li>
+                    </ul>
+                    <ul class="second">
+                        <li class="txt">faça seu orçamento</li>
+                        <li class="txt">seja um colaborador</li>
+                        <li class="txt"><strong>siga-nos nas redes</strong></li>
+                        <li class="sociais"><img src="./img/icon-facebook.svg" alt="facebook icon"><img
+                                src="./img/icon-instagram.svg" alt="instagram icon"></li>
+                    </ul>
+                    <ul class="third">
+                        <li class="txt"><strong>LOJA BH(a 5km do centro!)</strong></li>
+                        <li class="txt">Av. Professor Mário Werneck, 26 - 2º Andar</li>
+                        <li class="txt">Belo Horizonte, MG, CEP: 30455-610</li>
+                        <li class="txt">comercial@comercial.com.br</li>
+                        <li class="tel"><img src="./img/icon-telefone.svg" alt="phone icon">(31)3333-3333</li>
+                        <li class="tel"><img src="./img/icon-whatsapp-yellow.svg" alt="whatsapp icon">(31)9333-3333</li>
+                    </ul>
+                    <ul class="fourth">
+                        <li class="txt"><strong>LOJA BH(a 5km do centro!)</strong></li>
+                        <li class="txt">Av. Professor Mário Werneck, 26 - 2º Andar</li>
+                        <li class="txt">Belo Horizonte, MG, CEP: 30455-610</li>
+                        <li class="txt">comercial@comercial.com.br</li>
+                        <li class="tel"><img src="./img/icon-telefone.svg" alt="phone icon">(31)3333-3333</li>
+                        <li class="tel"><img src="./img/icon-whatsapp-yellow.svg" alt="whatsapp icon">(31)9333-3333</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="dark-footer">
+            <div class="interf-container">
+                <div class="foot-text">
+                    <img src="./img/logo-bertholdo-consultoria-2.png" alt="Bertholdo icon">
+                    <p class="underline">
+                        VERSATTI WEB:
+                    </p>
+                    <p class="ftxt">
+                        Você escolhe as funcionalidades do seu site de acordo com as necessidades de sua empresa.
+                    </p>
+                    <p class="versatti">
+                        VERSATTI WEB
+                    </p>
+                </div>
+                <div class="online">
+                    ON-LINE! SÓ CHAMAR!
+                    <p class="up">
+                        ^
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="warning">Disponível somente em resoluções acima de 850px!</div>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>

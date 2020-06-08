@@ -1,17 +1,23 @@
 .menu-nav {
     background-color: $lightheader;
-    text-transform: uppercase;
-    color: $bgcolor;
+    .interf-container {
+        text-transform: uppercase;
+        color: $bgcolor;
+        width: 100%;
+        padding: 0 7em;
+    }
 
     .header {
+        width: 100%;
         display: flex;
         flex-direction: row;
         height: 6em;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         font-size: 0.75em;
-        padding-right: 1em;
-
+        .logo {
+            width: 30%;
+        }
         h1 {
             font-size: 2.7em;
             font-weight: 700;
@@ -20,17 +26,21 @@
             list-style: none;
             display: flex;
             flex-direction: row;
-
+            font-size: 1.05em;
+            align-items: center;
+            padding-top: 1.5em;
+            width: 70%;
             img {
-                width: 15px;
-                height: 15px;
-                border: 1px solid $bgcolor;
-                border-radius: 5px;
+                width: 25px;
+                height: 25px;
+                border: 5px solid $bgcolor;
+                border-radius: 8px;
                 background-color: $bgcolor;
             }
 
             li {
                 padding-right: 3em;
+                min-width: 150px;
             }
         }
     }

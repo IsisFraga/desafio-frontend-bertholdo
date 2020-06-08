@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+    .block-mobile {
+        display: none;
+    }
+    body {
+        overflow: hidden;
+        overflow-x: hidden;
+        background-color: #000;
+    }
+    .warning {
+        display: block;
+    }
+}
+
+.block-mobile {
+    min-width: 900px;
+    overflow-x: hidden;
+    overflow: hidden;
+    width: 100%;
+}
+
+.warning {
+    color: #fff;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}

@@ -1,0 +1,117 @@
+.products {
+    .interf-container {
+        margin: 4em auto;
+        justify-content: center;
+        text-align: center;
+
+        .product {
+            font-size: 1.5em;
+            font-weight: 600;
+            font-family: "Poppins Black";
+            text-align: center;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+        .imgs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin: 3em auto;
+            align-items: center;
+            img {
+                height: 15em;
+            }
+
+            .btnn {
+                background-color: none;
+                color: $datacolor;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                height: 2em;
+                width: 2em;
+                margin: 0 1em 11em 1em;
+
+                &:hover {
+                    background-color: $datacolor;
+                    color: $bgcolor;
+                }
+            }
+            .prods {
+                // width: 25%;
+                // min-width: 300px;
+                // display: flex;
+                justify-content: center;
+                text-align: center;
+                img {
+                    position: relative;
+                    left: 65px;
+                }
+            }
+
+            .off {
+                display: flex;
+                position: relative;
+                font-family: "Poppins";
+                font-size: 0.8em;
+                bottom: 18.5em;
+                left: 5.5em;
+                background-color: $lightheader;
+                border-radius: 50%;
+                width: 3em;
+                height: 3em;
+                justify-content: center;
+                align-items: center;
+                color: $bgcolor;
+            }
+            figcaption {
+                width: 100%;
+                text-align: center;
+                font-weight: 700;
+                color: #000;
+                font-size: 0.75em;
+                font-family: "roboto";
+                text-transform: uppercase;
+
+                &:nth-child(3) {
+                    margin-top: -3em;
+
+                    .name {
+                        margin-bottom: 2.5em;
+                    }
+                }
+
+                .name {
+                    padding: 1em 11em 0 11em;
+                }
+
+                .price-ba {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .before {
+                        text-decoration: line-through;
+                        color: rgb(143, 138, 138);
+                        margin: 0;
+                    }
+                    .price {
+                        padding: 0 1em;
+                    }
+                }
+                .price {
+                    font-family: "poppins black";
+                    font-size: 1.4em;
+                    margin: 0;
+                }
+                .parc {
+                    font-family: "poppins";
+                    font-size: 0.9em;
+                    color: rgb(187, 183, 183);
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
